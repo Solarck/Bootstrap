@@ -47,7 +47,7 @@
               <a class="nav-link" href="#">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contato">contato</a>
+              <a class="nav-link" data-target="#Modalcontato" data-toggle="modal" href="#contato">contato</a>
             </li>
           </ul>
         </div>
@@ -89,14 +89,14 @@
     </section>
   </main>
 
-<!-- Title/text -->
+  <!-- Title/text -->
   <section>
     <h1 class="fonte-titulo text-center color-text pt-5">Receitas para economizar e ganhar saúde</h1>
     <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar,
       ganhar tempo e praticidade</p>
   </section>
 
-<!-- Cards -->
+  <!-- Cards -->
   <section class="container-fluid bg-light" id="receitas">
     <div class="row justify-content-center">
 
@@ -156,9 +156,49 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  <!-- Footer -->
+  <footer class="bg-secondary p-3">
+    <p class="text-light m-0 text-center">Contato: <a href="mailto:email@frutafruto.com.br"
+        class="text-light">email@frutafruto.com.br</a></p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modalcontato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group mb-2">
+              <label for="formGroupExampleInput">Nome Completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome Sobrenome">
+            </div>
+            <div class="form-group mb-2">
+              <label for="exampleFormControlInput1">Digite seu email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@seuemail.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Deixe seu Comentário</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Deixe aqui seu comentário"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>

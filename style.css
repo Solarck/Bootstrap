@@ -23,6 +23,11 @@
     color: #fff;
 }
 
+.botao-cor-especial:hover{
+    background: rgb(100, 8, 8);
+    color: #fff;
+}
+
 .borda-cor-especial{
     border-color: darkred;
 }
